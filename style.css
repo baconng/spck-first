@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+  html {
+    font-size: 5px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
   
   /* --header--*/
   .header {
@@ -17,17 +24,31 @@
     right: 0;
     line-height: 67px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    
+
   }
   
   .header .box1-header, .box2-header {
     display: flex;
     gap: 20px;
   }
-  
-  .header img {
+  .header a img{
     width: 150px;
     height: 37.5px;
-    align-self: center;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .header a img{
+    width: 150px;
+    height: 37.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
   
   .header ul {
@@ -39,19 +60,18 @@
   .header ul li a {
     text-decoration: none;
     color:  rgb(0, 0, 0);
-    font-size: 9.625px;
     font-weight: 600;
     align-self: center;
-    padding: 5px 3px;
+    font-size: 8px;
   }
   
   
   
   
-  ul li:hover {
+ .header ul li:hover {
     transform: translateY(-5px);
     transition: all 0.2s;
-    border-bottom: solid black 2px;
+    border-bottom: solid black 1px;
   }
   
   .header select {
@@ -130,33 +150,29 @@
   /*  text-content */
   .text-content {
     width: 100%;
-    height: fit-content;
+    height: 300px;
+    font-size: 12px;
+    padding: 5%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4 , 1fr);
     gap: 30px;
-    margin: 50px;
+    padding-bottom: 100px;
+
+  }
+  .text-content div {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 15px;
+  }
+
+  .text-content ul {
+   list-style-type:"-  ";
+   gap: 10px;
+  }
+  .fa-brands {
     
-  }
-  
-  .text-content h4 {
-    font-size: 13px;
-    padding-bottom: 20px;
-  }
-  
-  .text-content p {
-    font-size: 13px;
-    white-space: pre;
-  }
-  
-  .text-content .flex {
-    display: flex;
-    gap: 5px;
-  }
-  
-  .text-content img {
-    width: 150px;
-    height: 52px;
+    font-size: 24px;
   }
   /* end text-content */
   
@@ -170,3 +186,5 @@
     height: 100%;
     width: 100%;
   }
+
+ 

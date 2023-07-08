@@ -4,6 +4,13 @@
     box-sizing: border-box;
   }
   
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+  html {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  
   /* --header--*/
   .header {
     display: flex;
@@ -17,44 +24,31 @@
     right: 0;
     line-height: 67px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  }
-  
-  .header .box1-header, .box2-header {
-    display: flex;
     
-    gap: 20px;
-  }
-  
-  .header img {
-    width: 150px;
-    height: 37.5px;
-    align-self: center;
-  }
-  
-  .header {
-    display: flex;
-    height: 67px;
-    width: 100%;
-    justify-content: space-around;
-    background-color: white;
-    /* backdrop-filter: blur(2px); */
-    z-index: 10;
-    position: fixed;
-    top: 0;
-    right: 0;
-    line-height: 67px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
   }
   
   .header .box1-header, .box2-header {
     display: flex;
     gap: 20px;
   }
-  
-  .header img {
+  .header a img{
     width: 150px;
     height: 37.5px;
-    align-self: center;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .header a img{
+    width: 150px;
+    height: 37.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
   
   .header ul {
@@ -66,10 +60,9 @@
   .header ul li a {
     text-decoration: none;
     color:  rgb(0, 0, 0);
-    font-size: 9.625px;
     font-weight: 600;
     align-self: center;
-    padding: 5px 3px;
+    font-size: 8px;
   }
   
   
@@ -78,7 +71,7 @@
   ul li:hover {
     transform: translateY(-5px);
     transition: all 0.2s;
-    border-bottom: solid black 2px;
+    border-bottom: solid black 1px;
   }
   
   .header select {
@@ -88,7 +81,9 @@
     margin: auto 0;
     
   }
-  /* end header */
+  
+  /* --end header-- */
+  
   /* content */
   .content {
     margin-top: 100px;
@@ -131,7 +126,6 @@
   
   .card:hover .img2{
     opacity: 1;
-
     transition: all .3s linear;
   }
   
@@ -245,3 +239,36 @@
     height: 52px;
   }
   /* end text-content */
+
+
+  /* content-recui */
+.content-recui {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 100px;
+    gap: 20px;
+}
+.containter-card-recui {
+  display: flex;
+  justify-content: center; 
+   flex-wrap: wrap;
+   gap: 30px;
+}
+.card-recui {
+  width: 287px;
+  height: 383px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.card-recui:hover {
+  width: 300px;
+  height: 400px;
+  transition: all .5s;
+}
+
+  /* end content-recui */
